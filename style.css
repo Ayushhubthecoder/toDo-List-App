@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+#container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1f2a39;
+    color: white;
+    padding: 10px 20px;
+    width: 100vw;
+}
+
+.logo h4 {
+    margin: 0;
+
+}
+
+.navigation nav ul {
+    display: flex;   /* ul-container, items(nav links) ko flex kr diya */
+    list-style-type: none;
+}
+
+.navigation nav ul li {
+    margin: 0 15px;
+}
+
+.navigation nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s, color 0.3s;  /*when clicked effect will be seen in 0.3s */
+    padding: 5px 10px;
+}
+
+.navigation nav ul li a:hover {
+    background: #555;
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* section {
+    padding: 20px;
+    
+} */
+.intro{
+    padding:0 6vw;
+    color: yellow;
+}
+.sec{
+    padding: 20px;
+    background: rgb(21, 42, 46);
+    color:white;
+    border: 2px solid red;
+    margin: 6vh 35vw;
+    height: 75vh;
+    border-radius: 2vh;
+}
+
+
+.form form {
+    display: flex;
+    align-items: center;
+}
+
+.form input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #333;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.taskList ol{
+    list-style-type: none;
+    width: 25em;
+    font-size: 1.5em;
+}
+
+footer {
+    background: #333;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    height: 5vh;
+
+}
+
+.copy{
+    text-align: center;
+    color: white;
+
+}
+
+/* .Do{
+    height: 5vh;
+    width:
+} */

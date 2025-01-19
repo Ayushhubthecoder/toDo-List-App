@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+#container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    color: white;
+    padding: 10px 20px;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.navigation nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.navigation nav ul li {
+    margin: 0 15px;
+}
+
+.navigation nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s, color 0.3s;
+    padding: 5px 10px;
+}
+
+.navigation nav ul li a:hover {
+    background: #555;
+    color: #fff;
+    border-radius: 5px;
+}
+
+section {
+    margin: 6vh auto;
+    width: 50vw;
+    height: auto;
+    padding: 20px;
+    background: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.intro {
+    padding: 0 5vw;
+}
+
+.form {
+    padding: 20px;
+    background: black;
+    color: white;
+    border-radius: 8px;
+}
+
+.form form {
+    display: flex;
+    align-items: center;
+}
+
+.form input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #333;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form button:hover {
+    background-color: #555;
+}
+
+.taskList {
+    margin-top: 20px;
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.taskList ul {
+    list-style-type: none; /* Remove list dots */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+.taskList ul li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.taskList ul li:last-child {
+    border-bottom: none;
+}
+
+.taskList ul li.completed .task-text {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.taskList ul li.completed {
+    background-color: #e0ffe0;
+}
+
+.tick-icon {
+    color: green;
+    margin-right: 10px;
+}
+
+.delete-btn {
+    background: none;
+    border: none;
+    color: red;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.delete-btn:hover {
+    color: darkred;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
