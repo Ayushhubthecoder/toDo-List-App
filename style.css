@@ -139,10 +139,10 @@ body {
 footer {
     background: #333;
     padding: 10px 0;
-    position: fixed;
+    /* position: fixed; */
     width: 100%;
     bottom: 0;
-    height: 5vh;
+    height: 5.6vh;
 }
 
 .copy {
