@@ -14,17 +14,18 @@ body {
     align-items: center;
     background: #1f2a39;
     color: white;
-    padding: 10px 20px;
+    padding: 1.8vh 1.2vh;
     width: 100vw;
 }
 
-.logo h4 {
+.logo h4 a {
     margin: 0;
-
+    text-decoration: none;
+    color: inherit;
 }
 
 .navigation nav ul {
-    display: flex;   /* ul-container, items(nav links) ko flex kr diya */
+    display: flex;
     list-style-type: none;
 }
 
@@ -35,7 +36,7 @@ body {
 .navigation nav ul li a {
     color: white;
     text-decoration: none;
-    transition: background 0.3s, color 0.3s;  /*when clicked effect will be seen in 0.3s */
+    transition: background 0.3s, color 0.4s;
     padding: 5px 10px;
 }
 
@@ -45,36 +46,43 @@ body {
     border-radius: 5px;
 }
 
-/* section {
-    padding: 20px;
-    
-} */
-.intro{
-    padding:0 6vw;
-    color: yellow;
-}
-.sec{
-    padding: 20px;
-    background: rgb(21, 42, 46);
-    color:white;
-    border: 2px solid red;
-    margin: 6vh 35vw;
-    height: 75vh;
-    border-radius: 2vh;
+.intro {
+    text-align: center;
+    /* padding: 0 13vw; */
+    color: #a766fdd8;
+    color: rgba(0, 255, 255, 0.493);
+    /* color: #333; */
+    font-family: "Ubuntu", serif;
+    font-weight: 500;
+    font-style: normal;
+    margin-bottom: 15px;
 }
 
+.sec {
+    padding: 20px;
+    background: rgb(21, 42, 46);
+    color: white;
+    /* border: 2px solid red; */
+    margin: 3vh auto;
+    min-height: 82vh;
+    border-radius: 2vh;
+    max-width: 600px;
+}
 
 .form form {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    margin: 5px 0 10px 0;
 }
 
-.form input[type="text"] {
+.form input {
     flex: 1;
     padding: 10px;
     margin-right: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    margin-bottom: 10px;
 }
 
 .form button {
@@ -84,12 +92,48 @@ body {
     color: white;
     border-radius: 4px;
     cursor: pointer;
+    margin-bottom: 10px;
 }
 
-.taskList ol{
+.taskList ul {
     list-style-type: none;
-    width: 25em;
     font-size: 1.5em;
+}
+
+.taskList ul li {
+    padding: 10px;
+    border-bottom: 1px solid grey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.taskList ul li.completed {
+    background-color: #e0ffe0;
+    color: green;
+    /* Change text color to green */
+}
+
+.complete-btn {
+    background: #4CAF50;
+    /* Green background */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.complete-btn:hover {
+    background: #45a049;
+}
+
+.delete-btn {
+    background: none;
+    border: none;
+    color: red;
+    cursor: pointer;
+    font-size: 16px;
 }
 
 footer {
@@ -99,16 +143,59 @@ footer {
     width: 100%;
     bottom: 0;
     height: 5vh;
-
 }
 
-.copy{
+.copy {
     text-align: center;
     color: white;
+}
+@media only screen and (max-width: 768px) {
+    .navigation nav ul {
+        display: flex;
+        flex-direction: column;
+    }
 
+    .navigation nav ul li {
+        margin: 10px 0;
+    }
+
+    .sec {
+        width: 90%;
+        margin: 6vh auto;
+    }
+
+    .form form {
+        flex-direction: column;
+    }
+
+    .form input {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .form button {
+        width: 100%;
+        margin-right: 10px;
+    }
 }
 
-/* .Do{
-    height: 5vh;
-    width:
-} */
+@media only screen and (max-width: 500px) {
+    .form h3 {
+    color: #a866fd;
+
+    }
+
+    .sec {
+        width: 95%;
+        margin: 6vh auto;
+    }
+
+    .form input {
+        width: 100%;
+    }
+
+    .form button {
+        width: 100%;
+    }
+}
